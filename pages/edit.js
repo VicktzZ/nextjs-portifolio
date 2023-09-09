@@ -148,7 +148,7 @@ const Edit = () => {
 
   return (
     <>
-      {process.env.NODE_ENVas === 'development' &&
+      {process.env.NODE_ENV === 'development' &&
         <div className={`container mx-auto ${data.showCursor && "cursor-none"}`}>
         <Header isBlog></Header>
         {data.showCursor && <Cursor />}
